@@ -34,7 +34,7 @@ var ctx = canvas.getContext('2d');
 // ctx.closePath();
 // ctx.stroke();
 
-// creating Traingle
+// creating Triangle
 
 // ctx.beginPath();
 // ctx.moveTo(150, 50);
@@ -43,7 +43,14 @@ var ctx = canvas.getContext('2d');
 // ctx.lineTo(150, 50);
 // ctx.stroke();
 
-console.log("Radhe Radhe");
-
+// multiple circles
+for(var i = 0; i <= 100; i++){
+    var x = Math.random() * window.innerWidth;
+    var y = Math.random() * window.innerHeight;
+    ctx.beginPath();
+    ctx.arc(x, y, 20, 0, Math.PI * 2);
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+}
 
 
